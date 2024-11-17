@@ -1,22 +1,29 @@
-import { Box, HStack, Link } from "@chakra-ui/react";
+import { Box, HStack, Link, Image  } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 
-const Navbar = () => {
+export default function Navbar() {
   return (
-    <Box bg="teal.500" p={4}>
-      <HStack spacing={8}>
-        <Link as={RouterLink} to="/" color="white" fontWeight="bold">
-          Home
-        </Link>
-        <Link as={RouterLink} to="/posts" color="white" fontWeight="bold">
-          Posts
-        </Link>
-        <Link as={RouterLink} to="/about" color="white" fontWeight="bold">
-          About
-        </Link>
+    <Box bg="gray.700" >
+
+      <HStack justify="space-between">
+      
+      <Link as={RouterLink} to="/">
+        <Image
+          src="/BH.png"
+          alt="Navbar Logo"
+          boxSize="80px" 
+        />
+      </Link>
+
+        <HStack >
+          <Link as={RouterLink} to="/posts">
+            Posts
+          </Link>
+          <Link as={RouterLink} to="/about">
+            About
+          </Link>
+        </HStack>
       </HStack>
     </Box>
   );
-};
-
-export default Navbar;
+}

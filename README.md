@@ -69,8 +69,15 @@ This will start the frontend app at http://localhost:5173.
 - **PUT** `/users/:id` - Update a user by ID
 - **DELETE** `/users/:id` - Delete a user by ID
 
-### **Testing with Postman**
-- Use Postman to test the backend endpoints.
+## Testing the Backend Endpoints with Postman
+
+1. Download the Postman collection file: **`BloggUsers.postman_collection.json`**.
+2. Open Postman and go to **File > Import**.
+3. Select the downloaded `BloggUsers.postman_collection.json` file.
+4. Once imported, you will see the collection in your Postman workspace.
+5. Use the endpoints provided to test the API.
+
+
 ---
 
 ## SQL

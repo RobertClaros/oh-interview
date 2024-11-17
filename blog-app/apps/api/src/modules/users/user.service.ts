@@ -1,6 +1,6 @@
 import { users } from "./users.data";
 import { User } from "./users.interface";
-import { v4 as uuidv4 } from "uuid"; // Usaremos esta librería para generar un UUID
+import { v4 as uuidv4 } from "uuid"; 
 
 export class UsersService {
   findAll(): User[] {
@@ -13,7 +13,7 @@ export class UsersService {
 
   createUser(user: Omit<User, "id">): User {
     const newUser: User = {
-      id: uuidv4(), // Generar un ID automáticamente
+      id: uuidv4(),
       ...user,
     };
     users.push(newUser);
