@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "af063f50-bca9-4e10-8783-2ddbc379c2b0",
+		"name": "BloggUsers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28200033"
+	},
+	"item": [
+		{
+			"name": "http://localhost:4000/users/7a631aba-51c8-4e8f-b4db-dadf54911ec8",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"username\": \"Anderson Neo\", \"email\": \"neo_anderson@example.com\", \"password\": \"pass\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/users/7a631aba-51c8-4e8f-b4db-dadf54911ec8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						"7a631aba-51c8-4e8f-b4db-dadf54911ec8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/users/07e96bee-de13-492d-8e43-bb20918336e6",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/users/07e96bee-de13-492d-8e43-bb20918336e6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						"07e96bee-de13-492d-8e43-bb20918336e6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"Zinedin Zidane\",\r\n  \"email\": \"zidane@example.com\",\r\n  \"password\": \"pass\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/users/2e5c587c-cac6-4d99-9b2b-b7196a92a993",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/users/2e5c587c-cac6-4d99-9b2b-b7196a92a993",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						"2e5c587c-cac6-4d99-9b2b-b7196a92a993"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
