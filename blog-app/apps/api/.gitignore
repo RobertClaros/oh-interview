@@ -1,0 +1,6 @@
+# Dependencias
+node_modules/
+.pnpm/
+.pnp.*
+yarn.lock
+package-lock.json

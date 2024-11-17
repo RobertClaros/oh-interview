@@ -1,0 +1,8 @@
+# Dependencias
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Archivos de configuración y logs
+*.log
