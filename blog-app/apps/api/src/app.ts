@@ -1,9 +1,4 @@
-import express from 'express';
+import { AppModule } from "./app.module";
 
-const app = express();
-
-app.get('/', (req, res) => {
-  res.send('Hello there');
-});
-
-export default app;
+const app = new AppModule();
+app.listen(4000);
